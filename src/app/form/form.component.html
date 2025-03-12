@@ -1,0 +1,15 @@
+ 
+
+ 
+ 
+ <form action="">
+
+    <input type="text" placeholder="first name" [(ngModel)]="firstname" [ngModelOptions]="{standalone:true}"(ngModelChange)="user()">
+    <input type="text" placeholder="last name" [(ngModel)]="lastname" [ngModelOptions]="{standalone:true}"(ngModelChange)="user()">
+    
+    <button (click)="username()" >save</button>
+
+ </form>
+
+ <h1> <span>{{lastname}}</span></h1>
+ <h1> <span>{{firstname}}</span></h1>
